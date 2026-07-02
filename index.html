@@ -58,26 +58,15 @@
                             <img src="./assets/icons/logo.png" alt="Logo Avanti" class="logo-avanti" />
                         </a>
 
-                        <div class="search-wrapper flex flex-col">
+                        <div class="search-desktop">
 
-    <div class="search-desktop">
+                            <input id="searchInput" type="text" placeholder="Digite aqui o que você procura" class="w-full h-[46px] px-4 outline-none" />
 
-        <input
-            id="searchInput"
-            type="text"
-            placeholder="Digite aqui o que você procura"
-            class="w-full h-[46px] px-4 outline-none"
-        />
+                            <button id="searchButton" class="bg-white px-5">
+                                <img src="./assets/icons/search-icon.png">
+                            </button>
 
-        <button id="searchButton" class="bg-white px-5">
-            <img src="./assets/icons/search-icon.png">
-        </button>
-
-    </div>
-
-    <p id="searchResult" class="mt-2 text-sm text-gray-600"></p>
-
-</div>
+                        </div>
 
                     </div>
 
@@ -123,6 +112,8 @@
 
             </div>
 
+
+            <p id="searchResult" class="mt-4 text-sm text-gray-600"></p>
 
         </div>
 
