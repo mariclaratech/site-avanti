@@ -17,14 +17,12 @@ function handleSearch(input) {
   searchResult.innerHTML = `Você buscou por: "${value}"`;
 }
 
-// Desktop
 if (searchButton && searchInput) {
   searchButton.addEventListener("click", () => {
     handleSearch(searchInput);
   });
 }
 
-// Mobile
 if (searchButtonMobile && searchInputMobile) {
   searchButtonMobile.addEventListener("click", () => {
     handleSearch(searchInputMobile);
