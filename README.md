@@ -16,7 +16,6 @@ O objetivo foi reproduzir com fidelidade o layout disponibilizado no Figma utili
 
 - Layout responsivo para desktop e mobile
 - Menu de categorias com interação em JavaScript
-- Campo de busca que exibe o termo pesquisado
 - Carrossel principal com autoplay
 - Carrossel de produtos utilizando Swiper
 - Menu de navegação interativo
