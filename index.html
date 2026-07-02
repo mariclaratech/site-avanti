@@ -1,0 +1,3825 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head class="container-site">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Avanti</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="font-nunito bg-[#ffffff] text-black">
+
+
+    <div class="bg-[#005CFF] text-white text-center text-[14px] py-2 font-bold">
+
+        Ganhe
+        <span class="font-bold bg-[#6325c4] rounded-sm px-1 inline-block mr-1">
+    R$10,00
+</span>
+        </span> de desconto no seu primeiro pedido. Utilize o cupom
+        <span class="font-light">
+    DESCONTO10
+  </span>
+
+    </div>
+
+
+    <header class="bg-white">
+
+
+        <div>
+
+            <div class="w-full max-w-[1920px] mx-auto px-4 py-5">
+
+                <div class="header-top">
+
+                    <div class="header-left">
+
+
+                        <button class="mobile-menu md:hidden text-2xl">
+                            ☰
+                        </button>
+
+
+                        <a href="./index.html" class="cursor-pointer">
+                            <img src="./assets/icons/logo.png" alt="Logo Avanti" class="logo-avanti" />
+                        </a>
+
+                        <div class="search-desktop">
+
+                            <input id="searchInput" type="text" placeholder="Digite aqui o que você procura" class="w-full h-[46px] px-4 outline-none" />
+
+                            <button id="searchButton" class="bg-white px-5">
+                                <img src="./assets/icons/search-icon.png">
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="header-right">
+
+                        <img src="./assets/icons/user-icon.svg" alt="">
+
+                        <a href="./login.html" class="text-sm text-left cursor-pointer hover:text-[#005CFF] transition font-semibold">
+                            Olá,
+                            <span class="block font-semibold">
+    Nome cliente!
+  </span>
+</a>
+
+                    </div>
+
+                    <a href="./carrinho.html" class="relative text-2xl cursor-pointer">
+                        <img src="./assets/icons/cart-icon.png">
+
+                        <span class="absolute -top-2 -right-2 bg-[#005CFF] text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center">
+              2
+            </span>
+
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="mt-4 flex md:hidden">
+
+                <input id="searchInputMobile" type="text" placeholder="Digite aqui o que você procura" class="w-full h-[46px] px-4 outline-none" />
+
+                <button id="searchButtonMobile" class="bg-white px-5">
+                    <img src="./assets/icons/search-icon.png">
+                </button>
+
+            </div>
+
+
+            <p id="searchResult" class="mt-4 text-sm text-gray-600"></p>
+
+        </div>
+
+        </div>
+
+        <nav class="nav-bar">
+
+            <div class="group relative mr-8">
+
+                <button class="flex items-center gap-2 text-[14px] font-bold text-[#000000] hover:text-[#005CFF] transition-all duration-300 py-4">
+                    ☰ Todas as Categorias
+                </button>
+
+
+                <div class="absolute left-0 top-full hidden group-hover:flex
+             w-[1260px] h-[330px]
+             bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+             rounded-b-md z-50">
+
+
+                    <div class="w-[240px] bg-[#F5F5F5] px-4 py-5 overflow-y-auto">
+
+                        <ul class="space-y-3 text-[13px]">
+
+                            <li class="department-item active flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                            <li class="department-item flex justify-between items-center text-[#303030] font-normal cursor-pointer">
+                                <span>Departamento</span>
+                                <img src="./assets/icons/arrow-not-selected.png" alt="Seta" class="department-arrow w-[5px] h-[8px]">
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div class="department-content flex flex-1 items-start px-8 py-5">
+
+
+                        <div class="flex flex-1 gap-16">
+
+
+                            <div>
+                                <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                <ul class="space-y-3 text-[13px] text-[#656565]">
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div>
+                                <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                <ul class="space-y-3 text-[13px] text-[#656565]">
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div>
+                                <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                <ul class="space-y-3 text-[13px] text-[#656565]">
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                    <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               rounded-lg
+               font-bold
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="group mr-8">
+
+
+                <button class="flex items-center gap-2 text-[14px]
+           font-semibold text-[#000000]
+           hover:text-[#005CFF]
+           transition-all duration-300 py-4">
+                    Departamento
+                </button>
+
+
+                <div class="absolute top-[90%] left-1/2 -translate-x-[48%]
+         hidden group-hover:flex
+         max-w-[1260px] w-full
+         h-[330px]
+         bg-white
+         shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+         rounded-b-md
+         z-50">
+
+
+
+                    <div class="flex justify-between w-full px-8 py-5">
+
+                        <div class="flex flex-col gap-4">
+
+                            <h2 class="font-bold text-[16px]">Departamento</h2>
+
+
+                            <div class="flex gap-16">
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               font-bold
+               rounded-lg
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="group mr-8">
+
+
+                <button class="flex items-center gap-2 text-[14px]
+           font-semibold text-[#000000]
+           hover:text-[#005CFF]
+           transition-all duration-300 py-4">
+                    Departamento
+                </button>
+
+
+                <div class="absolute top-[90%] left-1/2 -translate-x-[48%]
+         hidden group-hover:flex
+         max-w-[1260px] w-full
+         h-[330px]
+         bg-white
+         shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+         rounded-b-md
+         z-50">
+
+
+
+                    <div class="flex justify-between w-full px-8 py-5">
+
+                        <div class="flex flex-col gap-4">
+
+                            <h2 class="font-bold text-[16px]">Departamento</h2>
+
+
+                            <div class="flex gap-16">
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               font-bold
+               rounded-lg
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="group mr-8">
+
+
+                <button class="flex items-center gap-2 text-[14px]
+           font-semibold text-[#000000]
+           hover:text-[#005CFF]
+           transition-all duration-300 py-4">
+                    Departamento
+                </button>
+
+
+                <div class="absolute top-[90%] left-1/2 -translate-x-[48%]
+         hidden group-hover:flex
+         max-w-[1260px] w-full
+         h-[330px]
+         bg-white
+         shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+         rounded-b-md
+         z-50">
+
+
+
+                    <div class="flex justify-between w-full px-8 py-5">
+
+                        <div class="flex flex-col gap-4">
+
+                            <h2 class="font-bold text-[16px]">Departamento</h2>
+
+
+                            <div class="flex gap-16">
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               font-bold
+               rounded-lg
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="group mr-8">
+
+
+                <button class="flex items-center gap-2 text-[14px]
+           font-semibold text-[#000000]
+           hover:text-[#005CFF]
+           transition-all duration-300 py-4">
+                    Departamento
+                </button>
+
+
+                <div class="absolute top-[90%] left-1/2 -translate-x-[48%]
+         hidden group-hover:flex
+         max-w-[1260px] w-full
+         h-[330px]
+         bg-white
+         shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+         rounded-b-md
+         z-50">
+
+
+
+                    <div class="flex justify-between w-full px-8 py-5">
+
+                        <div class="flex flex-col gap-4">
+
+                            <h2 class="font-bold text-[16px]">Departamento</h2>
+
+
+                            <div class="flex gap-16">
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               font-bold
+               rounded-lg
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="group mr-8">
+
+
+                <button class="flex items-center gap-2 text-[14px]
+           font-semibold text-[#000000]
+           hover:text-[#005CFF]
+           transition-all duration-300 py-4">
+                    Departamento
+                </button>
+
+
+                <div class="absolute top-[90%] left-1/2 -translate-x-[48%]
+         hidden group-hover:flex
+         max-w-[1260px] w-full
+         h-[330px]
+         bg-white
+         shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+         rounded-b-md
+         z-50">
+
+
+
+                    <div class="flex justify-between w-full px-8 py-5">
+
+                        <div class="flex flex-col gap-4">
+
+                            <h2 class="font-bold text-[16px]">Departamento</h2>
+
+
+                            <div class="flex gap-16">
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               font-bold
+               rounded-lg
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="group mr-8">
+
+
+                <button class="flex items-center gap-2 text-[14px]
+           font-semibold text-[#000000]
+           hover:text-[#005CFF]
+           transition-all duration-300 py-4">
+                    Departamento
+                </button>
+
+
+                <div class="absolute top-[90%] left-1/2 -translate-x-[48%]
+         hidden group-hover:flex
+         max-w-[1260px] w-full
+         h-[330px]
+         bg-white
+         shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+         rounded-b-md
+         z-50">
+
+
+
+                    <div class="flex justify-between w-full px-8 py-5">
+
+                        <div class="flex flex-col gap-4">
+
+                            <h2 class="font-bold text-[16px]">Departamento</h2>
+
+
+                            <div class="flex gap-16">
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               font-bold
+               rounded-lg
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="group mr-8">
+
+
+                <button class="flex items-center gap-2 text-[14px]
+           font-semibold text-[#000000]
+           hover:text-[#005CFF]
+           transition-all duration-300 py-4">
+                    Departamento
+                </button>
+
+
+                <div class="absolute top-[90%] left-1/2 -translate-x-[48%]
+         hidden group-hover:flex
+         max-w-[1260px] w-full
+         h-[330px]
+         bg-white
+         shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+         rounded-b-md
+         z-50">
+
+
+
+                    <div class="flex justify-between w-full px-8 py-5">
+
+                        <div class="flex flex-col gap-4">
+
+                            <h2 class="font-bold text-[16px]">Departamento</h2>
+
+
+                            <div class="flex gap-16">
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               font-bold
+               rounded-lg
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="group mr-8">
+
+
+                <button class="flex items-center gap-2 text-[14px]
+           font-semibold text-[#000000]
+           hover:text-[#005CFF]
+           transition-all duration-300 py-4">
+                    Departamento
+                </button>
+
+
+                <div class="absolute top-[90%] left-1/2 -translate-x-[48%]
+         hidden group-hover:flex
+         max-w-[1260px] w-full
+         h-[330px]
+         bg-white
+         shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+         rounded-b-md
+         z-50">
+
+
+
+                    <div class="flex justify-between w-full px-8 py-5">
+
+                        <div class="flex flex-col gap-4">
+
+                            <h2 class="font-bold text-[16px]">Departamento</h2>
+
+
+                            <div class="flex gap-16">
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3 class="text-[#005CFF] font-bold text-[13px] mb-3">
+        Categoria
+      </h3>
+
+                                    <ul class="space-y-2 text-[13px] text-[#656565]">
+
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+                                        <li><a href="./categoria.html" class="hover:text-[#005CFF]">Categoria</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="relative w-[236px] h-[298px] rounded-2xl overflow-hidden ml-auto flex-shrink-0">
+
+
+                            <img src="./assets/images/mug-menu.png" alt="" class="w-full h-full object-cover" />
+
+
+                            <div class="absolute inset-0 bg-gradient-to-bl from-black/80 via-black/45 to-transparent"></div>
+
+
+                            <div class="absolute inset-0 flex flex-col px-5 pt-7 pb-5">
+
+                                <h2 class="text-white
+               text-[20px]
+               leading-[27px]
+               tracking-[-0.2px]
+               max-w-[135px]">
+
+        <span class="font-light">
+            Confira os<br>
+            Produtos
+        </span>
+
+        <br>
+
+        <span class="font-bold">
+            Que<br>
+            acabaram<br>
+            De chegar
+        </span>
+
+    </h2>
+
+                                <a href="./produtos.html" class="mt-5
+               border border-white
+               text-white
+               text-[11px]
+               font-bold
+               rounded-lg
+               px-4
+               py-2
+               w-fit
+               transition
+               hover:bg-white
+               hover:text-black">
+        VER TODOS
+    </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section class="bg-[#E7E7EA] overflow-hidden">
+
+        <div class="w-full max-w-[1920px] mx-auto">
+
+            <div class="swiper heroSwiper">
+
+                <div class="swiper-wrapper">
+
+
+                    <div class="swiper-slide">
+
+                        <div class="grid grid-cols-2 items-center h-[250px] md:h-[500px]">
+
+
+                            <div class="banner-image h-full overflow-hidden relative">
+
+                                <img src="./assets/images/banner-chair.png" alt="" class="w-full h-full object-cover object-[80%]" />
+
+                            </div>
+
+
+                            <div class="banner-text px-4">
+
+
+                                <h1 class="sale-text block md:hidden text-[34px] leading-none font-light">
+  <span class="font-bold">
+    SUPER
+  </span>
+
+  SALE
+</h1>
+
+
+                                <h1 class="sale-text hidden md:block text-[96px] leading-none font-light drop-shadow-[0_4px_8px_rgba(0,0,0,0.35)]">
+  <span class="font-bold">SUPER</span>SALE
+</h1>
+
+                                <p class="text-[#005CFF] text-[11px] md:text-[28px] uppercase font-semibold mt-2 tracking-normal md:tracking-[8px] block md:hidden">
+                                    selected items up to
+                                </p>
+
+                                <p class="text-[#005CFF] text-[11px] md:text-[28px] uppercase font-semibold mt-2 tracking-normal md:tracking-[8px] hidden md:block [text-shadow:2px_2px_8px_rgba(0,0,0,0.45)]">
+                                    Itens selecionados com até
+                                </p>
+
+                                <p class="text-[#005CFF] text-[32px] font-bold mt-2 md:hidden">
+                                    50%OFF
+                                </p>
+
+
+                                <p class="hidden md:block text-[#005CFF] text-[72px] font-bold mt-2 [text-shadow:2px_2px_8px_rgba(0,0,0,0.45)]">
+                                    50%OFF
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide">
+
+                        <div class="grid grid-cols-2 items-center h-[250px] md:h-[500px]">
+
+
+                            <div class="banner-image h-full overflow-hidden relative">
+
+                                <img src="./assets/images/banner-chair.png" alt="" class="w-full h-full object-cover object-[80%]" />
+
+                            </div>
+
+
+                            <div class="banner-text px-4">
+
+
+                                <h1 class="sale-text block md:hidden text-[34px] leading-none font-light">
+  <span class="font-bold">
+    SUPER
+  </span>
+
+  SALE
+</h1>
+
+
+                                <h1 class="sale-text hidden md:block text-[96px] leading-none font-light drop-shadow-[0_4px_8px_rgba(0,0,0,0.35)]">
+  <span class="font-bold">SUPER</span>SALE
+</h1>
+
+                                <p class="text-[#005CFF] text-[11px] md:text-[28px] uppercase font-semibold mt-2 tracking-normal md:tracking-[8px] block md:hidden">
+                                    selected items up to
+                                </p>
+
+                                <p class="text-[#005CFF] text-[11px] md:text-[28px] uppercase font-semibold mt-2 tracking-normal md:tracking-[8px] hidden md:block [text-shadow:2px_2px_8px_rgba(0,0,0,0.45)]">
+                                    Itens selecionados com até
+                                </p>
+
+                                <p class="text-[#005CFF] text-[32px] font-bold mt-2 md:hidden">
+                                    50%OFF
+                                </p>
+
+
+                                <p class="hidden md:block text-[#005CFF] text-[72px] font-bold mt-2 [text-shadow:2px_2px_8px_rgba(0,0,0,0.45)]">
+                                    50%OFF
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="swiper-slide">
+
+                        <div class="grid grid-cols-2 items-center h-[250px] md:h-[500px]">
+
+
+                            <div class="banner-image h-full overflow-hidden relative">
+
+                                <img src="./assets/images/banner-chair.png" alt="" class="w-full h-full object-cover object-[80%]" />
+
+                            </div>
+
+
+                            <div class="banner-text px-4">
+
+
+                                <h1 class="sale-text block md:hidden text-[34px] leading-none font-light">
+  <span class="font-bold">
+    SUPER
+  </span>
+
+  SALE
+</h1>
+
+
+                                <h1 class="sale-text hidden md:block text-[96px] leading-none font-light drop-shadow-[0_4px_8px_rgba(0,0,0,0.35)]">
+  <span class="font-bold">SUPER</span>SALE
+</h1>
+
+                                <p class="text-[#005CFF] text-[11px] md:text-[28px] uppercase font-semibold mt-2 tracking-normal md:tracking-[8px] block md:hidden">
+                                    selected items up to
+                                </p>
+
+                                <p class="text-[#005CFF] text-[11px] md:text-[28px] uppercase font-semibold mt-2 tracking-normal md:tracking-[8px] hidden md:block [text-shadow:2px_2px_8px_rgba(0,0,0,0.45)]">
+                                    Itens selecionados com até
+                                </p>
+
+                                <p class="text-[#005CFF] text-[32px] font-bold mt-2 md:hidden">
+                                    50%OFF
+                                </p>
+
+
+                                <p class="hidden md:block text-[#005CFF] text-[72px] font-bold mt-2 [text-shadow:2px_2px_8px_rgba(0,0,0,0.45)]">
+                                    50%OFF
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="mt-10 bg-white">
+
+        <div class="container-site">
+
+            <div class="w-full lg:w-[80%] mx-auto">
+
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-[16px] md:text-[20px] font-bold">
+          Lançamentos
+        </h2>
+
+                    <a href="#" class="text-[14px] cursor-pointer text-[#303030] hover:text-[#005CFF] transition underline lg:no-underline font-bold">
+  Ver mais
+</a>
+                </div>
+
+
+
+                <div class="products-slider">
+
+                    <div class="swiper-button-prev hidden lg:flex">
+                        <img src="./assets/icons/arrow-left.png" alt="Anterior">
+                    </div>
+
+                    <div class="swiper-button-next hidden lg:flex">
+                        <img src="./assets/icons/arrow-right.png" alt="Próximo">
+                    </div>
+
+                    <div class="swiper productsSwiper">
+
+                        <div class="swiper-wrapper">
+
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        <div class="swiper-pagination py-4"></div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+    </section>
+
+
+    <section class="bg-white mt-10 mb-8 md:mb-10">
+
+        <div class="block md:hidden bg-[#C2C2C2] p-10">
+            <img src="./assets/images/mug.png" class="w-full">
+        </div>
+
+        <div class="container-site">
+
+            <div class="w-full lg:w-[80%] mx-auto">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+
+
+                    <div class="hidden md:block bg-[#C2C2C2] p-10 w-[90%] mx-auto md:w-full">
+                        <img src="./assets/images/mug.png" alt="" class="w-full" />
+                    </div>
+
+
+                    <div>
+
+                        <h2 class="text-[24px] md:text-[30px] font-bold mb-6 mt-10 md:mt-0">
+  LOREM IPSUM
+</h2>
+
+
+                        <div class="block md:hidden">
+
+                            <p class="text-[14px] leading-relaxed text-black mb-4">
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            </p>
+
+                            <p class="text-[14px] leading-relaxed text-black">
+                                Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris
+                                iaculis magna nisl, vel porttitor augue placerat et.
+                            </p>
+
+                        </div>
+
+
+                        <div class="hidden md:block">
+
+                            <p class="text-[18px] leading-relaxed text-black mb-4">
+                                Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+                                fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+                            </p>
+
+                            <p class="text-[18px] leading-relaxed text-black">
+                                Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+                                fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="bg-[#DEDEDE] py-8 md:mt-16">
+
+        <div class="container-site py-4">
+
+            <div class="w-full lg:w-[80%] mx-auto">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center md:px-8">
+
+
+
+                    <div class="order-1 md:order-2">
+
+                        <img src="./assets/images/mug-table.png" alt="" class="w-full rounded" />
+
+                    </div>
+
+
+                    <div class="order-2 md:order-1 px-4">
+
+                        <h2 class="flex justify-center w-full text-[20px] md:text-[30px] font-bold text-black md:text-[#4F4F4F] mb-6 md:mb-10">
+  LOREM IPSUM
+</h2>
+
+
+                        <div class="flex gap-5 mb-6">
+
+                            <div class="min-w-[60px] h-[60px] rounded-full bg-[#005CFF] flex items-center justify-center text-white text-2xl shadow-xl">
+                                <img src="./assets/icons/local-icon.svg">
+                            </div>
+
+                            <p class="text-[#4F4F4F] leading-relaxed text-[12px] md:text-[18px]  text-black md:text-[#4F4F4F] [text-shadow:0_2px_4px_rgba(0,0,0,0.25)] md:[text-shadow:none]">
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            </p>
+
+                        </div>
+
+
+                        <div class="flex gap-5 mb-6">
+
+                            <div class="min-w-[60px] h-[60px] rounded-full bg-[#005CFF] flex items-center justify-center text-white text-2xl shadow-xl">
+                                <img src="./assets/icons/local-icon.svg">
+                            </div>
+
+                            <p class="text-[#4F4F4F] leading-relaxed text-[12px] md:text-[18px]  text-black md:text-[#4F4F4F] [text-shadow:0_2px_4px_rgba(0,0,0,0.25)] md:[text-shadow:none]">
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            </p>
+
+                        </div>
+
+
+                        <div class="flex gap-5">
+
+                            <div class="min-w-[60px] h-[60px] rounded-full bg-[#005CFF] flex items-center justify-center text-white text-2xl shadow-xl">
+                                <img src="./assets/icons/local-icon.svg">
+                            </div>
+
+                            <p class="text-[#4F4F4F] leading-relaxed text-[12px] md:text-[18px]  text-black md:text-[#4F4F4F] [text-shadow:0_2px_4px_rgba(0,0,0,0.25)] md:[text-shadow:none]">
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+
+
+    <section class="bg-white mt-14 mb-8 md:mb-10">
+
+        <div class="block md:hidden bg-[#C2C2C2] p-10">
+            <img src="./assets/images/mug.png" class="w-full">
+        </div>
+
+        <div class="container-site">
+
+            <div class="w-full lg:w-[80%] mx-auto">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+
+
+                    <div class="hidden md:block bg-[#C2C2C2] p-10 w-[90%] mx-auto md:w-full">
+                        <img src="./assets/images/mug.png" alt="" class="w-full" />
+                    </div>
+
+
+                    <div>
+
+                        <h2 class="text-[24px] md:text-[30px] font-bold mb-6 mt-10 md:mt-0">
+  LOREM IPSUM
+</h2>
+
+
+                        <div class="block md:hidden">
+
+                            <p class="text-[14px] leading-relaxed text-black mb-4">
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            </p>
+
+                            <p class="text-[14px] leading-relaxed text-black">
+                                Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris
+                                iaculis magna nisl, vel porttitor augue placerat et.
+                            </p>
+
+                        </div>
+
+
+                        <div class="hidden md:block">
+
+                            <p class="text-[18px] leading-relaxed text-black mb-4">
+                                Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+                                fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+                            </p>
+
+                            <p class="text-[18px] leading-relaxed text-black">
+                                Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+                                fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="hidden lg:block mt-10 bg-white">
+
+        <div class="container-site">
+
+            <div class="w-full lg:w-[80%] mx-auto">
+
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-[16px] md:text-[20px] font-bold">
+          Lançamentos
+        </h2>
+
+                    <a href="#" class="text-[14px] text-[#303030] cursor-pointer hover:text-[#005CFF] transition underline lg:no-underline font-bold">
+  Ver mais
+</a>
+                </div>
+
+
+
+                <div class="products-slider">
+
+                    <div class="swiper-button-prev hidden lg:flex">
+                        <img src="./assets/icons/arrow-left.png" alt="Anterior">
+                    </div>
+
+                    <div class="swiper-button-next hidden lg:flex">
+                        <img src="./assets/icons/arrow-right.png" alt="Próximo">
+                    </div>
+
+                    <div class="swiper productsSwiper">
+
+                        <div class="swiper-wrapper">
+
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg border border-[#DDDDDD] px-2 py-2">
+                                    <span class="bg-[#00264E] text-white text-[10px] px-2 py-1 rounded">NOVO</span>
+
+                                    <img src="./assets/images/product-shirt.png" alt="" class="mx-auto mb-4" />
+
+                                    <h3 class="text-[14px] font-normal leading-[19px] text-left mb-2">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+      </h3>
+
+                                    <div class="flex flex-col">
+
+
+                                        <div class="flex items-center gap-2">
+                                            <span class="line-through text-black text-[12px] font-light">
+            R$100,00
+        </span>
+
+                                            <span class="bg-[#5EC0BE] text-white text-[11px] font-regular px-2 py-[2px] rounded mt-1">
+            10% OFF
+        </span>
+                                        </div>
+
+
+                                        <p class="text-[16px] font-bold">
+                                            R$79,90
+                                        </p>
+
+
+                                        <p class="text-[12px]">
+                                            <span class="font-light">Ou em até </span>
+                                            <span class="font-bold">10x de R$ 7,90</span>
+                                        </p>
+
+                                    </div>
+
+                                    <a href="./produto.html" class="block w-full bg-[#005CFF] text-white py-3 rounded-lg mt-4 text-center cursor-pointer hover:bg-blue-700 transition text-[14px] font-bold">
+  Comprar
+</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        <div class="swiper-pagination py-4"></div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+    </section>
+
+
+
+    <section class="relative overflow-hidden py-0 lg:py-10">
+
+
+        <img src="./assets/images/banner-bottom.png" alt="" class="w-full h-[220px] md:h-[500px] object-cover" />
+
+
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[75px] md:h-[132px] bg-[#005CFF] flex items-center justify-center px-6">
+
+            <p class="text-white text-center text-[14px] md:text-[24px] font-light leading-tight">
+                Entre em contato conosco e verifique a disponibilidade para sua região!
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="py-16 bg-white">
+        <div class="container-site">
+
+            <div class="w-full lg:w-[80%] mx-auto">
+
+                <h2 class="text-center text-base md:text-[20px] font-bold mb-6">
+      Cadastre-se na nossa
+      <span class="text-[#005CFF]">newsletter</span>
+    </h2>
+
+                <form class="bg-[#F5F5F5] md:bg-[#DEDEDE] p-8 md:p-12 rounded-lg flex justify-center items-center">
+
+                    <div class="flex flex-col items-center md:flex-row md:items-center gap-4 lg:gap-6 w-full">
+
+                        <input type="text" placeholder="Digite seu nome" class="bg-white px-4 py-3 rounded w-full max-w-[280px] h-[48px] rounded-[8px] text-[14px] text-regular text-[#303030] placeholder:text-[#303030]" />
+
+                        <input type="email" placeholder="Digite seu e-mail" class="bg-white px-4 py-3 rounded w-full max-w-[280px] h-[48px] rounded-[8px] text-[14px] text-regular text-[#303030] placeholder:text-[#303030]" />
+
+                        <div class="flex items-center w-full max-w-[320px] md:w-auto gap-3 md:flex-1">
+                            <input type="checkbox" class="w-[18px] h-[18px] shrink-0 bg-white rounded-[4px] appearance-none border border-gray-300 checked:bg-[#005CFF] checked:border-[#005CFF]" />
+
+                            <span class="text-[12px] md:text-[10px] lg:text-sm leading-[18px] md:leading-[14px] lg:leading-[20px] text-left text-[#656565] font-bold whitespace-nowrap md:whitespace-normal lg:whitespace-nowrap">
+    Estou de acordo com a
+    <a href="#" class="underline text-inherit text-[#656565]">
+      Política de Privacidade
+    </a>
+  </span>
+                        </div>
+
+                        <button class="newsletter-btn">Cadastrar</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-[#F5F5F5] py-10 md:py-24 pb-12">
+
+        <div class="container-site">
+
+            <div class="w-full lg:w-[80%] mx-auto">
+
+                <div class="hidden md:grid md:grid-cols-4 gap-10 md:gap-4 lg:gap-10">
+
+                    <div>
+                        <img src="./assets/icons/logo.png" alt="" class="h-8 mb-6 md:mb-10" />
+
+                        <div class="flex gap-6 lg:gap-10 text-2xl">
+                            <a href="https://instagram.com" target="_blank" class="cursor-pointer hover:opacity-70 transition">
+                                <img src="assets/icons/instagram.svg">
+                            </a>
+
+                            <a href="https://facebook.com" target="_blank" class="cursor-pointer hover:opacity-70 transition">
+                                <img src="assets/icons/facebook.svg">
+                            </a>
+
+                            <a href="https://youtube.com" target="_blank" class="cursor-pointer hover:opacity-70 transition">
+                                <img src="assets/icons/youtube-logo.svg">
+                            </a>
+
+                            <a href="https://tiktok.com" target="_blank" class="cursor-pointer hover:opacity-70 transition">
+                                <img src="assets/icons/tiktok.svg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold mb-4">
+            Institucional
+          </h3>
+
+                        <ul class="space-y-2 text-sm text-[#303030]">
+
+                            <li>
+                                <a href="./sobre.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      Sobre Nós
+    </a>
+                            </li>
+
+                            <li>
+                                <a href="./lojas.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      Nossas Lojas
+    </a>
+                            </li>
+
+                            <li>
+                                <a href="./privacidade.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      Privacidade e Segurança
+    </a>
+                            </li>
+
+                            <li>
+                                <a href="./termos.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      Termos e Condições
+    </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold mb-4">
+            Central de ajuda
+          </h3>
+
+                        <ul class="space-y-2 text-sm text-[#303030]">
+
+                            <li>
+                                <a href="./contato.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      Fale Conosco
+    </a>
+                            </li>
+
+                            <li>
+                                <a href="./frete.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      Frete e Entrega
+    </a>
+                            </li>
+
+                            <li>
+                                <a href="./trocas.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      Trocas e Devoluções
+    </a>
+                            </li>
+
+                            <li>
+                                <a href="./pagamento.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      Formas de pagamento
+    </a>
+                            </li>
+
+                            <li>
+                                <a href="./faq.html" class="cursor-pointer hover:text-[#005CFF] transition">
+      FAQ
+    </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold mb-4">
+            Atendimento
+          </h3>
+
+                        <ul class="space-y-2 text-sm text-[#303030]">
+
+                            <li>
+
+                                <a href="tel:+550012345678" class="cursor-pointer text-[#303030] hover:text-[#005CFF] transition text-[14px] flex items-center gap-1">
+                                    <h5 class="m-0 font-bold">Telefone:</h5>
+                                    <h5 class="m-0 font-regular">(00) 1234-5678</h5>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="mailto:exemplo@exemplo.com.br" class="flex items-center gap-1 text-[14px] text-[#303030] hover:text-[#005CFF] transition">
+
+                                    <h5 class="m-0 font-bold">E-mail:</h5>
+                                    <h5 class="m-0 font-normal">exemplo@exemplo.com.br</h5>
+
+                                </a>
+                            </li>
+                            <li class="cursor-pointer text-[#303030] hover:text-[#005CFF] transition text-[12px]">
+                                <h5 class="font-bold">Horário de atendimento:</h5>
+                                <h5 class="font-regular">Segunda a Sábado: 07h00 às 23h00</h5>
+                                <h5 class="font-regular">Domingos e Feriados: 07h00 às 21h00</h5>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="block md:hidden bg-[#F5F5F5] pt-10">
+
+            <div class="w-full lg:w-[80%] mx-auto">
+
+
+                <div class="px-6">
+
+
+                    <div class="flex flex-col items-center gap-4 md:gap-4">
+
+                        <img src="./assets/icons/logo.png" alt="" class="logo-avanti-footer h-8 mb-8" />
+
+
+                        <div class="flex items-center gap-6 mb-10">
+
+                            <img src="./assets/icons/instagram.svg" class="w-5 h-5" />
+                            <img src="./assets/icons/facebook.svg" class="w-5 h-5" />
+                            <img src="./assets/icons/youtube-logo.svg" class="w-5 h-5" />
+                            <img src="./assets/icons/tiktok.svg" class="w-5 h-5" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="border-t border-[#DDDDDD]">
+
+
+                    <div class="border-b border-[#DDDDDD]">
+
+                        <button class="footer-btn w-full flex items-center justify-between px-4 py-4">
+
+                            <h5 class="text-[16px] font-bold text-[#303030]">
+          Institucional
+        </h5>
+
+                            <img src="./assets/icons/arrow.png" class="footer-arrow transition duration-300 cursor-pointer" />
+
+                        </button>
+
+
+                        <div class="footer-content hidden px-4 pb-5">
+
+                            <ul class="space-y-3 text-[14px] text-[#303030]">
+
+                                <li>Sobre Nós</li>
+                                <li>Nossas Lojas</li>
+                                <li>Privacidade e Segurança</li>
+                                <li>Termos e Condições</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="border-b border-[#DDDDDD]">
+
+                        <button class="footer-btn w-full flex items-center justify-between px-4 py-4">
+
+                            <h5 class="text-[16px] font-bold text-[#303030]">
+          Central de ajuda
+        </h5>
+
+                            <img src="./assets/icons/arrow.png" class="footer-arrow transition duration-300 cursor-pointer" />
+
+                        </button>
+
+
+                        <div class="footer-content hidden px-4 pb-5">
+
+                            <ul class="space-y-3 text-[14px] text-[#303030]">
+
+                                <li>Fale Conosco</li>
+                                <li>Frete e Entrega</li>
+                                <li>Trocas e Devoluções</li>
+                                <li>Formas de pagamento</li>
+                                <li>FAQ</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="border-b border-[#DDDDDD]">
+
+                        <button class="footer-btn w-full flex items-center justify-between px-4 py-4">
+
+                            <h5 class="text-[16px] font-bold text-[#303030]">
+          Atendimento
+        </h5>
+
+                            <img src="./assets/icons/arrow.png" class="footer-arrow transition duration-300 cursor-pointer" />
+
+                        </button>
+
+
+                        <div class="footer-content hidden px-4 pb-5">
+
+                            <ul class="space-y-3 text-[14px] text-[#303030]">
+
+                                <li>
+
+                                    <a href="tel:+550012345678" class="cursor-pointer text-[#303030] text-[14px] flex items-center gap-1">
+                                        <h5 class="m-0 font-bold">Telefone:</h5>
+                                        <h5 class="m-0 font-regular">(00) 1234-5678</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:exemplo@exemplo.com.br" class="cursor-pointer text-[#303030] text-[14px] flex items-center gap-1">
+                                        <h5 class="m-0 font-bold">E-mail:</h5>
+                                        <h5 class="m-0 font-regular">exemplo@exemplo.com.br</h5>
+                                    </a>
+                                </li>
+                                </li>
+                                <li class="cursor-pointer text-[#303030] text-[12px]">
+                                    <h5 class="font-bold">Horário de atendimento:</h5>
+                                    <h5 class="font-regular">Segunda a Sábado: 07h00 às 23h00</h5>
+                                    <h5 class="font-regular">Domingos e Feriados: 07h00 às 21h00</h5>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="flex flex-wrap justify-center gap-10 md:gap-10 mt-16 px-8 md:px-0 text-2xl">
+
+
+            <span>
+    <img
+      src="./assets/icons/amex.png">
+  </span>
+
+            <span>
+    <img
+      src="./assets/icons/mastercard.png">
+  </span>
+
+            <span>
+    <img
+      src="./assets/icons/visa.png">
+  </span>
+
+            <span>
+    <img
+      src="./assets/icons/hipercard.png">
+  </span>
+
+            <span>
+    <img
+      src="./assets/icons/elo.png">
+  </span>
+
+            <span>
+    <img
+      src="./assets/icons/diners-club.png">
+  </span>
+
+            <span>
+    <img
+      src="./assets/icons/paypal.png">
+  </span>
+
+            <span>
+    <img
+      src="./assets/icons/pix-logo.png">
+  </span>
+
+            <span>
+    <img
+      src="./assets/icons/boleto-icon.png">
+  </span>
+
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="text-center text-[12px] text-[#808080] leading-relaxed max-w-[900px] mx-auto">
+
+        </div>
+
+
+        <div class="bg-white pt-10 pb-10">
+
+
+
+            <p class="hidden md:block text-[12px] leading-relaxed text-[#303030] text-center max-w-[1100px] mx-auto">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+
+
+            <p class="block md:hidden text-[12px] leading-relaxed text-[#303030] text-center px-4">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+            </p>
+
+
+
+
+            <div class="container-site-footer flex flex-wrap justify-center items-center gap-6 mt-10">
+                <img src="./assets/icons/lets-encrypt.png" alt="" class="w-[38.59px] h-[30px] object-contain" />
+
+                <img src="./assets/icons/vtex-pci.png" alt="" class="w-[50.79px] h-[32px] object-contain" />
+
+                <img src="./assets/icons/avanti-footer.png" alt="" class="w-[57.38px] h-[10.18px] object-contain" />
+
+                <img src="./assets/icons/vtex-logo.png" alt="" class="w-[53px] h-[19px] object-contain" />
+            </div>
+
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+        <script src="./js/carousel.js"></script>
+        <script src="./js/main.js"></script>
+
+</body>
+
+</html>

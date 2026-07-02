@@ -1,0 +1,371 @@
+@import "tailwindcss";
+ :root {
+     --container-padding: 24px;
+}
+ .container-site {
+     width: 100%;
+     max-width: 1920px;
+     margin: 0 auto;
+     padding-inline: var(--container-padding);
+}
+ .container-site-footer {
+     @apply w-full max-w-[1920px] mx-auto px-6 md:px-16 xl:px-32;
+}
+ @theme {
+     --font-nunito: "Nunito", sans-serif;
+     --font-nunito-sans: "Nunito Sans", sans-serif;
+}
+ body {
+     font-family: "Nunito", sans-serif;
+}
+ .swiper-slide {
+     height: auto;
+}
+ .swiper-pagination {
+     position: relative !important;
+     padding-bottom: 0 !important;
+}
+ .heroSwiper {
+     padding-bottom: 0 !important;
+}
+ .swiper-pagination-bullet {
+     width: 8px;
+     height: 8px;
+     background: #838383;
+     opacity: 1;
+}
+ .swiper-pagination-bullet-active {
+     background: #FFFFFF;
+}
+ .productsSwiper .swiper-slide {
+     height: auto;
+}
+ .heroSwiper {
+     --swiper-pagination-color: #FFFFFF;
+}
+ .heroSwiper .swiper-pagination-bullet {
+     background: #838383;
+     opacity: 1;
+}
+ .heroSwiper .swiper-pagination-bullet-active {
+     background: #303030;
+}
+ .productsSwiper .swiper-wrapper {
+     align-items: stretch;
+}
+ .productsSwiper {
+     --swiper-pagination-color: #FFFFFF;
+}
+ .productsSwiper .swiper-pagination-bullet {
+     background: #838383;
+     opacity: 1;
+}
+ .productsSwiper .swiper-pagination-bullet-active {
+     background: #303030;
+}
+ html {
+     scroll-behavior: smooth;
+}
+ .banner-text {
+     text-align: center;
+     font-size: 100px;
+}
+ .nav-bar {
+     display: none;
+}
+ @media (min-width: 768px) {
+     .nav-bar {
+         display: flex;
+         align-items: center;
+         position: relative;
+         width: 100%;
+         max-width: 1920px;
+         margin: 0 auto;
+         padding: 8px 24px;
+         flex-wrap: wrap;
+         gap: 8px;
+         justify-content: center;
+    }
+}
+ @media (min-width: 640px) {
+     .nav-bar {
+         padding: 8px 24px;
+    }
+}
+ @media (min-width: 1024px) {
+     .nav-bar {
+         padding: 8px 40px;
+    }
+}
+ @media (min-width: 1280px) {
+     .nav-bar {
+         padding: 8px 60px;
+    }
+}
+ .logo-avanti {
+     width: clamp(120px, 12vw, 153px);
+     height: auto;
+     display: block;
+}
+ .logo-avanti {
+     width: 120px;
+     height: auto;
+}
+ @media (min-width: 768px) {
+     .logo-avanti {
+         width: 153px;
+    }
+}
+ .search-desktop {
+     display: none;
+}
+ @media (min-width: 768px) {
+     .search-desktop {
+         display: flex;
+         align-items: center;
+         flex: 1;
+         max-width: 596px;
+         min-width: 596px;
+         height: 40px;
+         border: 1px solid #d1d5db;
+         border-radius: 10px;
+         overflow: hidden;
+         background: white;
+    }
+     #searchInput {
+         font-weight: 600;
+    }
+     #searchInput::placeholder {
+         color: black;
+         opacity: 1;
+    }
+     .header-right {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         flex-shrink: 0;
+         margin: 0 20px 0 40px;
+    }
+     .header-top {
+         display: flex;
+         flex: 1;
+         align-items: center;
+         justify-content:center;
+    }
+     .header-left {
+         display: flex;
+         align-items: center;
+         gap: 60px;
+         flex: 0.8;
+         min-width: 0;
+    }
+}
+ @media (max-width: 767px) {
+     .nav-bar {
+         display: none;
+    }
+     .header-right {
+         display: none;
+    }
+     .header-top {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 0 12px;
+         min-height: 48px;
+         gap: 85px;
+    }
+     .header-left {
+         display: flex;
+         align-items: center;
+         gap: 85px;
+    }
+     .mobile-menu {
+         flex-shrink: 0;
+    }
+     .logo-avanti {
+         height: 28px;
+         width: auto;
+         max-width: 120px;
+         object-fit: contain;
+         display: block;
+    }
+     .cart-btn {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-shrink: 0;
+    }
+     #searchInputMobile {
+         height: 40px;
+    }
+     #searchInputMobile::placeholder {
+         color: black;
+         font-size: 14px;
+    }
+     .mt-4.flex.md\:hidden {
+         width: 95%;
+         max-width: 361px;
+         margin: 5px auto 0;
+         border: 1px solid #d1d5db;
+         border-radius: 10px;
+         overflow: hidden;
+         background: white;
+    }
+     .banner-text {
+         font-size: 40px;
+    }
+     .logo-avanti-footer {
+         height: 32px;
+         width: auto;
+         object-fit: contain;
+         display: block;
+         margin-bottom: 24px;
+    }
+}
+ .heroSwiper img {
+     display: block;
+}
+ button, a {
+     cursor: pointer;
+}
+ .nav-bar {
+     position: relative;
+}
+ .heroSwiper {
+     position: relative;
+}
+ .heroSwiper .swiper-pagination {
+     position: absolute !important;
+     bottom: 8px !important;
+     left: 0 !important;
+     right: 0 !important;
+     width: 100% !important;
+     text-align: center;
+     z-index: 20;
+}
+ .banner-image::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     pointer-events: none;
+     background: linear-gradient( to left, #E7E7EA 0%, rgba(231,231,234,.95) 8%, rgba(231,231,234,.7) 15%, rgba(231,231,234,.3) 22%, rgba(231,231,234,0) 30% );
+}
+ .swiper-button-prev::after, .swiper-button-next::after {
+     display: none;
+}
+ .productsSwiper {
+     position: relative;
+}
+ .productsSwiper .swiper-wrapper {
+     overflow: visible;
+}
+ .productsSwiper .swiper-button-prev, .productsSwiper .swiper-button-next {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+ .productsSwiper .swiper-button-prev {
+     left: -18px;
+}
+ .productsSwiper .swiper-button-next {
+     right: -18px;
+}
+ .productsSwiper .swiper-slide {
+     position: relative;
+     z-index: 1;
+}
+ .productsSwiper .swiper-button-prev, .productsSwiper .swiper-button-next {
+     z-index: 9999;
+}
+ .newsletter-btn {
+     width: 280px;
+     min-width: 280px;
+     max-width: 280px;
+     height: 48px;
+     background: #005CFF;
+     color: white;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 700;
+}
+ .newsletter-btn:hover {
+     background: #0454e7;
+     transform: translateY(-0.5px);
+}
+ @media (min-width: 768px) {
+     .newsletter-btn {
+         width: 121px;
+         min-width: 121px;
+         max-width: 121px;
+    }
+}
+ .heroSwiper .swiper-pagination {
+     display: block;
+}
+ @media (min-width: 768px) {
+     .heroSwiper .swiper-pagination {
+         display: none !important;
+    }
+}
+ @media (min-width: 768px) and (max-width: 1023px) {
+     .search-desktop {
+         display: flex;
+         align-items: center;
+         flex: 1 1 0%;
+         max-width: 300px;
+         min-width: 5px;
+         height: 40px;
+         border: 1px solid rgb(209, 213, 219);
+         border-radius: 10px;
+         overflow: hidden;
+         background: white;
+    }
+}
+ .productsSwiper .swiper-button-prev{
+     width:60px!important;
+     height:60px!important;
+}
+ .productsSwiper .swiper-button-next{
+     width:60px!important;
+     height:60px!important;
+}
+ .products-slider{
+     position: relative;
+}
+ .productsSwiper{
+     overflow: hidden;
+}
+ .products-slider .swiper-button-prev, .products-slider .swiper-button-next{
+     width:52px;
+     height:52px;
+     position:absolute;
+     top:50%;
+     transform:translateY(-50%);
+     z-index:50;
+}
+ .products-slider .swiper-button-prev{
+     left:-40px;
+}
+ .products-slider .swiper-button-next{
+     right:-40px;
+}
+ .products-slider .swiper-button-prev::after, .products-slider .swiper-button-next::after{
+     display:none;
+}
+ .products-slider .swiper-button-prev img, .products-slider .swiper-button-next img{
+     width:30px;
+     height:30px;
+}
+ .products-slider .swiper-button-prev, .products-slider .swiper-button-next {
+     display: none;
+}
+ @media (min-width: 1024px) {
+     .products-slider .swiper-button-prev, .products-slider .swiper-button-next {
+         display: flex;
+    }
+}
