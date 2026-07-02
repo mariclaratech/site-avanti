@@ -1,23 +1,34 @@
 const searchButton = document.getElementById("searchButton");
 const searchInput = document.getElementById("searchInput");
+
+const searchButtonMobile = document.getElementById("searchButtonMobile");
+const searchInputMobile = document.getElementById("searchInputMobile");
+
 const searchResult = document.getElementById("searchResult");
 
-if (searchButton) {
+function handleSearch(input) {
+  const value = input.value;
 
+  if (value.trim() === "") {
+    searchResult.innerHTML = "Digite algo para buscar.";
+    return;
+  }
+
+  searchResult.innerHTML = `Você buscou por: "${value}"`;
+}
+
+// Desktop
+if (searchButton && searchInput) {
   searchButton.addEventListener("click", () => {
-
-    const value = searchInput.value;
-
-    if (value.trim() === "") {
-      searchResult.innerHTML = "Digite algo para buscar.";
-      return;
-    }
-
-    searchResult.innerHTML =
-      `Você buscou por: "${value}"`;
-
+    handleSearch(searchInput);
   });
+}
 
+// Mobile
+if (searchButtonMobile && searchInputMobile) {
+  searchButtonMobile.addEventListener("click", () => {
+    handleSearch(searchInputMobile);
+  });
 }
 
 const footerButtons = document.querySelectorAll(".footer-btn");
